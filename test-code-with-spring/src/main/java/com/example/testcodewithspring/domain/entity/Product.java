@@ -1,26 +1,23 @@
 package com.example.testcodewithspring.domain.entity;
 
 
-import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
 @Table
 @NoArgsConstructor
+@Getter
+@Setter
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "productName", nullable = false)
     private String productName;
-
-    @Builder
-    public Product(Long id, String username) {
-        this.id = id;
-        this.productName = productName;
-    }
 }

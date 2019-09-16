@@ -4,6 +4,7 @@ import com.example.testcodewithspring.domain.dto.ProductDto;
 import com.example.testcodewithspring.domain.entity.Product;
 import com.example.testcodewithspring.service.ProductService;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,6 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/contents")
 @AllArgsConstructor
+@Slf4j
 public class ProductController {
 
     private final ProductService productService;
