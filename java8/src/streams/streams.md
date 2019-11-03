@@ -1,4 +1,4 @@
-###[Java 8 In Action]
+###Java 8 In Action
 4.1 스트림이란 무엇인가?
 * 스트림은 자바 API에 새로 추가된 기능으로, 스트림을 이용하면 선언형(즉, 데이터를 처리하는 임시 구현 코드 대신 질의로 표현할 수 있다)으로 컬렉션 데이터를 처리할 수 있다.
 * 데이터 처리 연산을 지원하도록 소스에서 추출된 연속된 요소.
@@ -16,7 +16,7 @@
 * 최종연산 : 스트림이 아닌 결과를 반환하는 연산이다.
     * forEach, count, collect
 
-###[가장 빨리 만나는 코어 자바 9]
+###가장 빨리 만나는 코어 자바 9
 8. 스트림 
 - 반복자는 특정 순회 전략을 내포하므로 효율적인 동시 실행을 방해한다.
 
@@ -40,7 +40,7 @@
 * sorted : 정렬, 그중 Comparable 요소로 구성된 스트림에 작동하는 것, Comparator를 받는 것.
 ex) Stream<String> longestFirst = words.stream().sorted(Comparator.comparing(String::length).reversed());
 
-###[블로그]
+###블로그
 
 ####스트림 생성
 * 배열 
