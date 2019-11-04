@@ -32,6 +32,10 @@
 5.Singleton Pattern
 
 * LazyHolder 기법 
-    * "클래스를 로딩하고 초기화 하는 시점은 thread-safe 를 보장한다"는 점을 활용. 
+    * "클래스를 로딩하고 초기화 하는 시점은 Thread-safe 를 보장한다"는 점을 활용. 
     * Singleton 클래스에는 LazyHolder 의 클래스 변수가 없기 때문에, Singleton 클래스 로딩 시에는 LazyHolder 클래스를 초기화 하지 않는다.
     * LazyHolder.Instance 를 참조하는 순간 클래스가 로딩되고 초기화 하기 때문에, thread-safe 를 보장한다고 할 수 있다.
+    
+* Enum 클래스
+    * Thread-safe 를 보장한다.
+    * Reflection 공격에 안전하다.
