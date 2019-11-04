@@ -27,6 +27,11 @@
 * 자바는 단일 상속만 가능하다. 
   따라서, 템플릿 메서드 패턴(extends)보다는 전략패턴(implements)을 사용하는 것이 더 나을 수 있다. :+1:
 
-2019.10.25
+2019.11.04
 
 5.Singleton Pattern
+
+* LazyHolder 기법 
+    * "클래스를 로딩하고 초기화 하는 시점은 thread-safe 를 보장한다"는 점을 활용. 
+    * Singleton 클래스에는 LazyHolder 의 클래스 변수가 없기 때문에, Singleton 클래스 로딩 시에는 LazyHolder 클래스를 초기화 하지 않는다.
+    * LazyHolder.Instance 를 참조하는 순간 클래스가 로딩되고 초기화 하기 때문에, thread-safe 를 보장한다고 할 수 있다.
