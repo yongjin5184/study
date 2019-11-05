@@ -66,3 +66,67 @@ LongStream longStream = LongStream.rangeClosed(1, 5); // [1, 2, 3, 4, 5]
 ```
 Stream<String> stringStream = Pattern.compile(", ").splitAsStream("Java, Php, Ruby, Python"); // [Java, Php, Ruby, Python]
 ```
+
+####스트림 가공
+```
+List<String> list = Arrays.asList("Java", "Python", "Ruby");
+```
+
+* Filter : 스트림 내 요소를 하나씩 필터링.
+```
+Stream<String> stream = names.stream().filter(name -> name.contain("a"));
+```
+
+* Map : 스트림 내 요소들을 하나씩 특정 값으로 변환.
+```
+Stream<String> stream = names.stream().map(String::toUpperCase);
+```
+
+* FlatMap : 중첩 구조를 제거 단일 컬렉션으로 변환.
+```
+String[][] sample = new String[][]{
+  {"a", "b"}, {"c", "d"}, {"e", "a"}, {"a", "h"}, {"i", "j"}
+};
+
+Stream<String> stream = sample.stream()
+.flatMap(array -> Arrays.stream(array)).filter(x-> "a".equals(x));
+stream.forEach(System.out::println);
+
+//output
+a
+a
+a
+```
+
+* Sort
+```
+List<String> language = Arrays.asList("Java", "Python", "Php", "Ruby");
+language.stream().sorted().collect(Collector.toList());
+language.sorted(Comparator.reverseOrder()).collect(Collectors.toList);
+```
+
+####스트림 결과 만들기
+* Count, Sum, Min, Max
+```
+//스트림이 비어있다면 0을 반환
+long count = IntStream.of(1, 3, 5, 7, 9).count();
+long sum = LongStream.of(1, 3, 5, 7, 9).count();
+
+// Optional을 반환
+OptionalInt min = IntStream.of(1, 3, 5, 7, 9).min();
+OptionalInt max = IntStream.of(1, 3, 5, 7, 9).max();
+```
+
+* Collecting
+    * 리스트로 반환 : Collectors.toList();
+    * 스트링으로 이어 붙이기 : Collectors.joining();
+    
+* Matching
+    * 조건을 하나라도 만족하는지 : anyMatch
+    * 조건을 모두 만족하는지 : allMatch
+    * 조건을 모두 만족하지 않는지 : noneMatch
+
+* Iterating
+```
+language.stream().forEach(System.out::println);
+```
