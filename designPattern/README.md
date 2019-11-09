@@ -39,3 +39,7 @@
 * Enum 클래스
     * Thread-safe 를 보장한다.
     * Reflection 공격에 안전하다.
+    
+6. Factory Method Pattern
+* 새로운 객체를 만들어 내는 부분을 서브클래스에 위임한는 패턴
+* 생성 패턴의 하나
