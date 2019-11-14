@@ -48,3 +48,17 @@
 * 복합 객체와 단일 객체를 클라이언트에서 구별 없이 다루게 해주는 패턴
 * 디렉토리안에 파일 / 디렉토리안에 디렉토리를 생각하면 된다.
 * 구조 패턴의 하나
+
+2019.11.15
+
+8.Memento Pattern
+* 객체의 상태를 이전 상태로 복원하는데 사용하는 패턴
+* 행위 패턴
+[Tutorialspoint 디자인 패턴-Memento 패턴](https://www.tutorialspoint.com/design_pattern/memento_pattern.htm)
+* Memento Class 
+    * 복원할 객체의 상태를 포함
+* Originator
+    * 객체에 상태를 생성, 저장
+* Caretaker
+    * Memento 에서 객체 상태를 복원
+    
