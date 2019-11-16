@@ -53,8 +53,9 @@
 
 8.Memento Pattern
 * 객체의 상태를 이전 상태로 복원하는데 사용하는 패턴
-* 행위 패턴
-[Tutorialspoint 디자인 패턴-Memento 패턴](https://www.tutorialspoint.com/design_pattern/memento_pattern.htm)
+* 행위 패턴 
+
+* [Tutorialspoint 디자인 패턴-Memento 패턴](https://www.tutorialspoint.com/design_pattern/memento_pattern.htm)
 * Memento Class 
     * 복원할 객체의 상태를 포함
 * Originator
