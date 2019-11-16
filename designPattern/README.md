@@ -1,13 +1,13 @@
 2019.09.18
 
-1. Command Pattern 
+1.Command Pattern 
 * 객체의 행위(매서드)를 클래스로 만들어 캡슐화 하는 패턴
 * A 객체에서 B 객체의 메서드를 호출하려면 A 객체가 B 객체를 참조하고 있어야 한다. 
 즉, 의존성이 발생. 이때, Command Pattern 을 이용해 의존성을 제거 할 수 있다. :blush:
 
 2019.10.22
 
-2. Decorator Pattern
+2.Decorator Pattern
 * 객체의 결합을 통해 기능을 유연하게 확장할 수 있게 해주는 패턴
 * 자바 I/O 클래스 설계에 쓰이는 패턴
 * 구조 패턴의 하나
@@ -40,11 +40,11 @@
     * Thread-safe 를 보장한다.
     * Reflection 공격에 안전하다.
     
-6. Factory Method Pattern
+6.Factory Method Pattern
 * 새로운 객체를 만들어 내는 부분을 서브클래스에 위임한는 패턴
 * 생성 패턴의 하나
 
-7. Composite Pattern
+7.Composite Pattern
 * 복합 객체와 단일 객체를 클라이언트에서 구별 없이 다루게 해주는 패턴
 * 디렉토리안에 파일 / 디렉토리안에 디렉토리를 생각하면 된다.
 * 구조 패턴의 하나
@@ -52,14 +52,23 @@
 2019.11.15
 
 8.Memento Pattern
-* 객체의 상태를 이전 상태로 복원하는데 사용하는 패턴
-* 행위 패턴 
-
 * [Tutorialspoint 디자인 패턴-Memento 패턴](https://www.tutorialspoint.com/design_pattern/memento_pattern.htm)
+* 객체의 상태를 이전 상태로 복원하는데 사용하는 패턴
+* 행위 패턴의 하나
+
 * Memento Class 
     * 복원할 객체의 상태를 포함
 * Originator
     * 객체에 상태를 생성, 저장
 * Caretaker
     * Memento 에서 객체 상태를 복원
-    
+
+2019.11.16    
+
+9.Proxy Pattern
+* [Tutorialspoint 디자인 패턴-Proxy 패턴](https://www.tutorialspoint.com/design_pattern/proxy_pattern.htm)
+* 외부 세계에 기능을 인터페이스하기 위해 원래 객체를 만들어 반환한다.
+* 구조 패턴의 하나
+* 결과값을 변경하지 않고, 흐름제어를 위해 사용
+
+
