@@ -4,5 +4,5 @@
 
 회사에서 자격증이 필요한 개발자가 **꼭** 필요하다고 해서 시작하게 되었습니다. :pencil2:
 
-참고 강의 
+* 참고 강의 
     * [AWS Certified Solutions Architect - Associate 2019](https://www.udemy.com/course/aws-certified-solutions-architect-associate/)
