@@ -71,4 +71,10 @@
 * 구조 패턴의 하나
 * 결과값을 변경하지 않고, 흐름제어를 위해 사용
 
+2019.11.17
 
+10.Observer Pattern
+* [Tutorialspoint 디자인 패턴-Observer 패턴](https://www.tutorialspoint.com/design_pattern/observer_pattern.htm)
+* 일대다 의존관계의 경우에 하나의 오브젝트가 수정될 때, 종속 오브젝트에 자동으로 통지되는 패턴
+* 행위 패턴의 하나
+* Subject 가  Observer 를 사용. Client(Abstract) 는 Observer 를 extends 한다.
