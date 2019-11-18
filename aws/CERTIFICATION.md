@@ -21,6 +21,7 @@
         
 #### S3
 * S3 
+    * Simple Storage Service 
     * Object-based 
     * 99.99 availability / 11 9's durability
     * 0 bytes to 5TB 
@@ -54,3 +55,23 @@
         * 데이터 아카이빙용, 거의 액세스할 필요가 없는 데이터를 아카이빙 할 때 사용
         * 기본 검색 시간은 12시
         * 가장 저렴한 스토리지 옵션 
+        
+#### EC2
+* EC2
+    * Elastic Compute Cloud
+
+* Pricing Models
+    * On demand
+        * 사용에 따라, 시간/초 단위의 고정된 비율의 요금제
+        
+    * Reserved
+        * capacity reservation 에 따른 요금제
+        * 사용량을 예측할 수 있을때 사용
+        
+    * Spot
+        * application 이 유연한 시작/끝 시간이 있을 때 순간적으로 사용하는 요금제
+        * 아마존의 공급과 수요에 달려있음
+        
+    * Dedicated Hosts
+        * 전용 호스트 요금제
+        * 기존 서버에 한정된 소프트웨어 라이센스를 사용할 수 있음.
