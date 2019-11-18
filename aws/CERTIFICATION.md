@@ -1,3 +1,24 @@
+#### IAM 
+* IAM 
+    * Identity and Access Management
+    * AWS 리소스에 대한 액세스를 안전하게 제어할 수 있는 서비스
+    * 세분화된 권한 / 멀티 팩터 인증 (MFA)
+    
+* IAM 모범 사례
+    * 루트 사용자 액세스 키 사용하지 않음 / 삭제 권고
+    * 그룹을 사용하여 권한 할당
+    * 최소 권한 부여
+    * MFA 활성화
+    
+* ID
+    * Users
+    * Groups
+        * A collection of users
+    * Policies
+        * 정책을 통해 permission 을  Users/Groups/Role 에게 
+    * Roles
+        * Role 를 통해 Aws Resources 가 할당됨.
+        
 #### S3
 * S3 
     * Object-based 
