@@ -75,3 +75,30 @@
     * Dedicated Hosts
         * 전용 호스트 요금제
         * 기존 서버에 한정된 소프트웨어 라이센스를 사용할 수 있음.
+
+#### VPC
+* VPC 
+    * AWS Cloud 내부에서 구성되는 사용자의 AWS 계정 전용 가상 네트워크
+    * 다른 가상 네트워크와 논리적으로 분리. 즉, 논리적으로 격리된 공간을 프로비저닝
+    * 하나의 리전내에서만 생성 가능, multi AZ 생성 가능
+
+* Subnet
+    * VPC 안에서 실제로 리소스가 생성될 수 있는 네트워크
+    * 넷마스크 범위 2^16(65535개) ~ 28(16개)
+    * 서브넷을 만들지 않을 수도 있지만, VPC 로 아무것도 할 수 없음
+    * Public Subnet
+        * Internet Gateway, ELB, Public IP/Elastic IP를 가진 인스턴스를 내부에 가지고 있음 
+        * Public Subnet 내에 있는 Nat Instance 를 통하여 Private Subnet 내에 있는 instances 이 인터넷이 가능
+    * Private Subnet
+        * 기본적으로 외부와 차단
+        * private ip 만을 가지고 있으며 internet inbound/outbound 가 불가능, 오직 다른 서브넷과의 연결 가능
+
+* Internet Gateway
+    * VPC 에 생성된 instance 들은 기본적으로 인터넷 사용 불가, 따라서 인터넷 게이트웨이가 필요
+    * 라우팅 테이블에 인터넷 게이트웨이를 향하는 규칙을 추가하면 인터넷과 연결,(대상주소: 0.0.0.0/0 대상: 인터넷 게이트웨이)
+    * 인터넷을 사용하고자 하는 리소스는 퍼블릭 IP를 가지고 있어야 함
+
+* Route Table
+    * 서브넷과 연결되어 있는 리소스, 서브넷에서 네트워크를 이용할 때 라우트 테이블을 이용해 목적지를 찾음
+    * 하나의 라우트 테이블은 VPC 에 속한 다수의 서브넷에서 사용
+    

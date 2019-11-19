@@ -28,4 +28,7 @@
 
 * 참고 자료
     * [비공식 AWS 공인 솔루션스 아키텍트 – 어소시에이트 시험 가이드](https://github.com/serithemage/AWSCertifiedSolutionsArchitectUnofficialStudyGuide)
-    
+    * VPC
+        * [만들며서 배우는 아마 프라이빗 클라우드](https://www.44bits.io/ko/post/understanding_aws_vpc)
+        * [초보자를 위한 AWS 웹 구축](https://tech.cloud.nongshim.co.kr/2018/10/16/4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0vpc-subnet-route-table-internet-gateway/)
+        * [가장 쉽게 VPC 개념 잡기](https://medium.com/harrythegreat/aws-%EA%B0%80%EC%9E%A5%EC%89%BD%EA%B2%8C-vpc-%EA%B0%9C%EB%85%90%EC%9E%A1%EA%B8%B0-71eef95a7098)
