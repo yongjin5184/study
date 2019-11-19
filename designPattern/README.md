@@ -78,3 +78,8 @@
 * 일대다 의존관계의 경우에 하나의 오브젝트가 수정될 때, 종속 오브젝트에 자동으로 통지되는 패턴
 * 행위 패턴의 하나
 * Subject 가  Observer 를 사용. Client(Abstract) 는 Observer 를 extends 한다.
+
+11.Adapter Pattern
+* [Tutorialspoint 디자인 패턴-Adapter 패턴](https://www.tutorialspoint.com/design_pattern/adapter_pattern.htm)
+* 호환성이 맞지 않아 같이 쓸 수 없는 클래스를 연관 관계로 연결해서 사용할 수 있게 하는 패턴
+* 구조 패턴의 하나
