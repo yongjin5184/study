@@ -90,4 +90,5 @@
 * [Tutorialspoint 디자인 패턴-facade 패턴](https://www.tutorialspoint.com/design_pattern/facade_pattern.htm)
 * 시스템의 복잡성을 숨기기 위해 인터페이스(facade)를 하나 더 추가하는 패턴
 * 클라이언트가 시스템에 접근할 수 있는 인터페이스를 제공한다.
+* 최소 지식의 원칙
 * 구조 패턴의 하나
