@@ -76,10 +76,18 @@
 10.Observer Pattern
 * [Tutorialspoint 디자인 패턴-Observer 패턴](https://www.tutorialspoint.com/design_pattern/observer_pattern.htm)
 * 일대다 의존관계의 경우에 하나의 오브젝트가 수정될 때, 종속 오브젝트에 자동으로 통지되는 패턴
-* 행위 패턴의 하나
 * Subject 가  Observer 를 사용. Client(Abstract) 는 Observer 를 extends 한다.
+* 행위 패턴의 하나
 
 11.Adapter Pattern
 * [Tutorialspoint 디자인 패턴-Adapter 패턴](https://www.tutorialspoint.com/design_pattern/adapter_pattern.htm)
 * 호환성이 맞지 않아 같이 쓸 수 없는 클래스를 연관 관계로 연결해서 사용할 수 있게 하는 패턴
+* 구조 패턴의 하나
+
+2019.12.2
+
+12.facade Pattern
+* [Tutorialspoint 디자인 패턴-facade 패턴](https://www.tutorialspoint.com/design_pattern/facade_pattern.htm)
+* 시스템의 복잡성을 숨기기 위해 인터페이스(facade)를 하나 더 추가하는 패턴
+* 클라이언트가 시스템에 접근할 수 있는 인터페이스를 제공한다.
 * 구조 패턴의 하나
