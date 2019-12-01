@@ -16,7 +16,7 @@
 * 표현 영역 입장에서 보았을 때 응용 서비스는 도메인 영역과 표현 영역을 연결해 주는 창구인 **파사드 역할**을 한다.
 * 도메인 객체간의 흐름 제어, 트랜젝션, 접근 제어, 이벤트 처
 ```java
-public Result doSmeFunc(Some Req) {리
+public Result doSmeFunc(Some Req) {
     // 1. 리포지터리에서 애그리거트를 구한다.
     SomeAgg agg = someAggRepository.findById(req.getId());
     checkNull(agg);
