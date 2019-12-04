@@ -86,9 +86,16 @@
 
 2019.12.2
 
-12.facade Pattern
-* [Tutorialspoint 디자인 패턴-facade 패턴](https://www.tutorialspoint.com/design_pattern/facade_pattern.htm)
+12.Facade Pattern
+* [Tutorialspoint 디자인 패턴-Facade 패턴](https://www.tutorialspoint.com/design_pattern/facade_pattern.htm)
 * 시스템의 복잡성을 숨기기 위해 인터페이스(facade)를 하나 더 추가하는 패턴
 * 클라이언트가 시스템에 접근할 수 있는 인터페이스를 제공한다.
 * 최소 지식의 원칙
+* 구조 패턴의 하나
+
+2019.12.4
+
+12.Bridge Pattern
+* [Tutorialspoint 디자인 패턴-Bridge 패턴](https://www.tutorialspoint.com/design_pattern/bridge_pattern.htm)
+* 브리지 구조를 제공하여 구현 클래스와 추상 클래스를 분리한다.
 * 구조 패턴의 하나
