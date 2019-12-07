@@ -20,4 +20,10 @@ public class BaseExceptionController {
         log.info("throwRuntimeException");
         throw new RuntimeException();
     }
+
+    @GetMapping("/api/v1/performance-logger")
+    public String performanceLoggerByAspectj() {
+        log.info("performanceLoggerByAspectj");
+        return "SUCCESS";
+    }
 }
