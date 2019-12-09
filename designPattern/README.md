@@ -99,3 +99,13 @@
 * [Tutorialspoint 디자인 패턴-Bridge 패턴](https://www.tutorialspoint.com/design_pattern/bridge_pattern.htm)
 * 브리지 구조를 제공하여 구현 클래스와 추상 클래스를 분리한다.
 * 구조 패턴의 하나
+
+
+
+
+
+
+>> Enum 의 활용
+>> * Enum 안의 method 를 override 해서 사용 가능하다.
+>> * valueOf method 를 사용 열거형 정수를 가져올 수 있다.
+
