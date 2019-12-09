@@ -6,7 +6,7 @@
 ### BOUNDED CONTEXT
 * BOUNDED CONTEXT 는 모델의 경계를 결정하며 한 개의 BOUNDED CONTEXT 는 논리적으로 한 개의 모델을 갖는다.
 
-### BOUNDED CONTEXT 의 구햔
+### BOUNDED CONTEXT 의 구현
 * BOUNDED CONTEXT 는 도메인 기능을 제공하는 데 필요한 요소를 모두 포함한다.
 
 ### BOUNDED CONTEXT 간 통합
