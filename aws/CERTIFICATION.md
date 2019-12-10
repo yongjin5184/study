@@ -80,10 +80,13 @@
 * VPC 
     * AWS Cloud 내부에서 구성되는 사용자의 AWS 계정 전용 가상 네트워크
     * 다른 가상 네트워크와 논리적으로 분리. 즉, 논리적으로 격리된 공간을 프로비저닝
-    * 하나의 리전내에서만 생성 가능, multi AZ 생성 가능
-
+    * 하나의 리전내에서만 생성 가능
+    * 대체적으로 Multi AZ 기반으로 구성
+    * 다수의 Subnet 을 가질 수 있음
+    
 * Subnet
     * VPC 안에서 실제로 리소스가 생성될 수 있는 네트워크
+    * 하나의 AZ에 속해야 함
     * 넷마스크 범위 2^16(65535개) ~ 28(16개)
     * 서브넷을 만들지 않을 수도 있지만, VPC 로 아무것도 할 수 없음
     * Public Subnet
@@ -97,8 +100,26 @@
     * VPC 에 생성된 instance 들은 기본적으로 인터넷 사용 불가, 따라서 인터넷 게이트웨이가 필요
     * 라우팅 테이블에 인터넷 게이트웨이를 향하는 규칙을 추가하면 인터넷과 연결,(대상주소: 0.0.0.0/0 대상: 인터넷 게이트웨이)
     * 인터넷을 사용하고자 하는 리소스는 퍼블릭 IP를 가지고 있어야 함
-
+    * Subnet 을 외부 통신이 되도록 설정 가능
+    * Internet Gateway 을 VPC 에 Attach
+    * VPC 에는 하나의 IGW 만 attach 할 수 있음
+    * Route table 을 생성
+    
 * Route Table
     * 서브넷과 연결되어 있는 리소스, 서브넷에서 네트워크를 이용할 때 라우트 테이블을 이용해 목적지를 찾음
     * 하나의 라우트 테이블은 VPC 에 속한 다수의 서브넷에서 사용
     
+* CIDR 
+    * VPC 와 Subnet 을 구성 할때 반드시 설정해야 함
+     
+* Network ACL (Access Control List)
+    * VPC 의 Network ACL 은 Subnet 단위로 적용시킬 수 있.
+    * ACL 은 여러 서브넷에 적용이 가능하다. 하지만, 서브넷은 한번에 한개의 ACL 만 연결이 가능
+    
+* Security Group
+    * Security Group 은 instance 단위로 적용시킬 수 있음
+    * CL의 경우 Network 레벨에서의 방화벽이라면, Security Group은 인스턴스 레벨의 방화벽
+     
+* NAT Gateway
+    * private Subnet 에서 다른 AWS 서비스에 연결해야하는 경우
+    * 인터넷에서 Private instance 에 접근 불가 조건은 유지하면서 반대로 instance 에서 외부 인터넷으로 연결이 필요한 경우
