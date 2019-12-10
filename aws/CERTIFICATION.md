@@ -83,6 +83,15 @@
     * 하나의 리전내에서만 생성 가능
     * 대체적으로 Multi AZ 기반으로 구성
     * 다수의 Subnet 을 가질 수 있음
+
+* VPC Flow Log
+    * VPC 의 네트워크 인터페이스에서 전송되고 수신되는 IP 트래픽에 대한 정보를 수집할 수 있는 기능
+
+* VPC Peering Connection
+    * 서로 다른 VPC 끼리 통신하는 기능
+
+* VPC End Point
+    * 게이트웨이 및 NAT 인스턴스를 필요로하지 않고 AWS 서비스 및 VPC 엔드포인트 서비스에 비공개로 연결할 수 있음
     
 * Subnet
     * VPC 안에서 실제로 리소스가 생성될 수 있는 네트워크
