@@ -132,3 +132,9 @@
 * NAT Gateway
     * private Subnet 에서 다른 AWS 서비스에 연결해야하는 경우
     * 인터넷에서 Private instance 에 접근 불가 조건은 유지하면서 반대로 instance 에서 외부 인터넷으로 연결이 필요한 경우
+    
+### Route 53
+
+* www.example.com 과 같은 도메인 이름을 192.0.2.1 과 같은 IP 주소로 변환
+* 사용자의 요청을 AWS 의 다른 서비스로 연결 
+* 도메인 등록 대행
