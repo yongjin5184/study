@@ -100,8 +100,12 @@
 * 브리지 구조를 제공하여 구현 클래스와 추상 클래스를 분리한다.
 * 구조 패턴의 하나
 
+2019.12.16
 
-
+13.Filter Pattern
+* [Tutorialsponits_디자인_패턴-Filter_패턴](https://www.tutorialspoint.com/design_pattern/filter_pattern.htm)
+* 객체를 필터링하고 연결하는 패턴
+* 구조패턴의 하나
 
 
 
