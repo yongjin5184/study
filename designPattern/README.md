@@ -107,6 +107,11 @@
 * 객체를 필터링하고 연결하는 패턴
 * 구조패턴의 하나
 
+2019.12.17
+* [Tutorialsponits_디자인_패턴-Flyweight_패턴](https://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm)
+* 생성된 객체의 수를 줄이기 위해 사용 즉, 메모리의 낭비를 줄이고 퍼포먼스를 늘리기 위해 사용
+* 구조패턴의 하나
+
 
 
 >> Enum 의 활용
