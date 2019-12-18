@@ -108,10 +108,17 @@
 * 구조패턴의 하나
 
 2019.12.17
+
+14. Flyweight Pattern
 * [Tutorialsponits_디자인_패턴-Flyweight_패턴](https://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm)
 * 생성된 객체의 수를 줄이기 위해 사용 즉, 메모리의 낭비를 줄이고 퍼포먼스를 늘리기 위해 사용
 * 구조패턴의 하나
 
+2019.12.18
+
+15. Chain_of_responsibility_pattern
+* [Tutorialsponits_디자인_패턴-Chain_of_responsibility_pattern_패턴](https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm)
+* Request 에 대한 Receiver Object Chain 을 작성하는 패턴
 
 
 >> Enum 의 활용
