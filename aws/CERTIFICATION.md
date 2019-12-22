@@ -122,16 +122,19 @@
     * VPC 와 Subnet 을 구성 할때 반드시 설정해야 함
      
 * Network ACL (Access Control List)
-    * VPC 의 Network ACL 은 Subnet 단위로 적용시킬 수 있.
+    * VPC 의 Network ACL 은 Subnet 단위로 적용시킬 수 있음.
     * ACL 은 여러 서브넷에 적용이 가능하다. 하지만, 서브넷은 한번에 한개의 ACL 만 연결이 가능
     
 * Security Group
     * Security Group 은 instance 단위로 적용시킬 수 있음
-    * CL의 경우 Network 레벨에서의 방화벽이라면, Security Group은 인스턴스 레벨의 방화벽
+    * CL의 경우 Network 레벨에서의 방화벽이라면, Security Group 은 인스턴스 레벨의 방화벽
      
 * NAT Gateway
-    * private Subnet 에서 다른 AWS 서비스에 연결해야하는 경우
+    * Private Subnet 에서 다른 AWS 서비스에 연결해야하는 경우
     * 인터넷에서 Private instance 에 접근 불가 조건은 유지하면서 반대로 instance 에서 외부 인터넷으로 연결이 필요한 경우
+
+* Direct Connect 
+    * 내부 네트워크를 프라이빗 연결로 Direct Connect 와 연결
     
 ### Route 53
 
