@@ -136,8 +136,15 @@
 * Direct Connect 
     * 내부 네트워크를 프라이빗 연결로 Direct Connect 와 연결
     
-### Route 53
+* Route 53
+    * www.example.com 과 같은 도메인 이름을 192.0.2.1 과 같은 IP 주소로 변환
+    * 사용자의 요청을 AWS 의 다른 서비스로 연결 
+    * 도메인 등록 대행
 
-* www.example.com 과 같은 도메인 이름을 192.0.2.1 과 같은 IP 주소로 변환
-* 사용자의 요청을 AWS 의 다른 서비스로 연결 
-* 도메인 등록 대행
+* EBS
+    * Elastic Block Store, 일종의 하드디스크
+
+* EFS
+    * Elastic File System, Amazon EC2 인스턴스에 사용할 수 있는 간단하고 확장 가능한 파일 스토리지
+    * 저장 사용량 만큼만 비용이 발생
+    * 파일이 추가되고 제거됨에 따라 용량이 자동으로 증가하고 줄어듬
