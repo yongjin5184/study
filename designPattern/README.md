@@ -120,6 +120,14 @@
 * [Tutorialsponits_디자인_패턴-Chain_of_responsibility_pattern_패턴](https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm)
 * Request 에 대한 Receiver Object Chain 을 작성하는 패턴
 
+2019.12.23
+
+16. Prototype_pattern
+* [Tutorialsponits_디자인_패턴-Prototype_패턴](https://www.tutorialspoint.com/design_pattern/prototype_pattern.htm)
+* 객체를 직접 만드는데 비용이 많이 드는 경우 사용
+* 생성 패턴의 하나
+
+
 
 >> Enum 의 활용
 >> * Enum 안의 method 를 override 해서 사용 가능하다.
