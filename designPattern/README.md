@@ -125,6 +125,7 @@
 16. Prototype_pattern
 * [Tutorialsponits_디자인_패턴-Prototype_패턴](https://www.tutorialspoint.com/design_pattern/prototype_pattern.htm)
 * 객체를 직접 만드는데 비용이 많이 드는 경우 사용
+* 프로토 타입 인터페이스는 객체의 복제본을 만들도록 구현
 * 생성 패턴의 하나
 
 
