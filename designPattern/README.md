@@ -112,7 +112,9 @@
 14. Flyweight Pattern
 * [Tutorialsponits_디자인_패턴-Flyweight_패턴](https://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm)
 * 생성된 객체의 수를 줄이기 위해 사용 즉, 메모리의 낭비를 줄이고 퍼포먼스를 늘리기 위해 사용
+* String 상수 풀은 플라이트웨이트 패턴을 구현
 * 구조패턴의 하나
+
 
 2019.12.18
 
@@ -132,7 +134,9 @@
 
 17. Visitor Pattern
 * [Tutorialsponits_디자인_패턴-Visitor_패턴](https://www.tutorialspoint.com/design_pattern/visitor_pattern.htm)
+* 객체에 대한 행위의 내용을 외부 클래스로 추출
 * 동작 패턴 범주
+* [Visitor_패턴](https://blog.naver.com/2feelus/220664244510) 
 
 
 >> Enum 의 활용
