@@ -116,18 +116,23 @@
 
 2019.12.18
 
-15. Chain_of_responsibility_pattern
+15. Chain of responsibility Pattern
 * [Tutorialsponits_디자인_패턴-Chain_of_responsibility_pattern_패턴](https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm)
 * Request 에 대한 Receiver Object Chain 을 작성하는 패턴
 
 2019.12.23
 
-16. Prototype_pattern
+16. Prototype Pattern
 * [Tutorialsponits_디자인_패턴-Prototype_패턴](https://www.tutorialspoint.com/design_pattern/prototype_pattern.htm)
 * 객체를 직접 만드는데 비용이 많이 드는 경우 사용
 * 프로토 타입 인터페이스는 객체의 복제본을 만들도록 구현
 * 생성 패턴의 하나
 
+2019.12.26
+
+17. Visitor Pattern
+* [Tutorialsponits_디자인_패턴-Visitor_패턴](https://www.tutorialspoint.com/design_pattern/visitor_pattern.htm)
+* 동작 패턴 범주
 
 
 >> Enum 의 활용
