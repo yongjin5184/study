@@ -24,10 +24,12 @@
     * Simple Storage Service 
     * Object-based 
     * 99.99 availability / 11 9's durability
-    * 0 bytes to 5TB 
+    * 객체 하나의 크기는 1Byte ~ 5TB
+    * 저장 가능한 객체 갯수 무제한 
     * S3 name space 는 globally unique 함
     * 업로드가 성공하면 HTTP 200 status code 가 생성됨
     * 리전에 저장된 객체는 다른 리전으로 전송하지 않는 한 해당 리전을 벗어나지 않음
+    * 웹(HTTP 프로토콜) 에서 파일에 접근할 수 있다.
     
 * S3 Storage Classes
 
@@ -56,6 +58,9 @@
         * 기본 검색 시간은 12시
         * 가장 저렴한 스토리지 옵션 
         
+* Storage Gateway (AWS 서비스 중 하나)
+    * On-promise 환경과 AWS 의 Storage 인프라를 연결시켜주는 서비스
+
 #### EC2
 * EC2
     * Elastic Compute Cloud
@@ -148,3 +153,4 @@
     * Elastic File System, Amazon EC2 인스턴스에 사용할 수 있는 간단하고 확장 가능한 파일 스토리지
     * 저장 사용량 만큼만 비용이 발생
     * 파일이 추가되고 제거됨에 따라 용량이 자동으로 증가하고 줄어듬
+    
