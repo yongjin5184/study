@@ -61,6 +61,8 @@
     * S3 Amazon S3 Reduced Redundancy Storage(RRS)
         * 중요하지 않고 재생성 가능한 데이터를 Amazon S3 스탠다드 스토리지 보다 낮은 수준의 중복성으로 저장할 수 있는 Amazon S3의 스토리지 옵션. 
     
+    * [S3의 스토리지 클래스](https://bit.ly/2MWI8oY)
+    
 * Storage Gateway (AWS 서비스 중 하나)
     * On-promise 환경과 AWS 의 Storage 인프라를 연결시켜주는 서비스
 
@@ -152,14 +154,14 @@
 * EBS
     * Elastic Block Store, 일종의 하드디스크
     * 볼륨 특성
-        * 범용 SSD
+        * General Purpose(gp2) SSD - 범용 SSD
             * 다양한 워크로드에 사용할 수 있으며 가격 대비 성능이 우수한 범용 SSD 불륨
-        * 프로비저닝된 IOPS SSD
+        * Provisioned IOPS SSD (io1)- 프로비저닝된 IOPS SSD
             * 지연 시간이 짧거나 처리량이 많은 미션 크리티컬 워크로드에 적한한 고성능 SSD 불륨
-        * 처리량에 최적화된 HDD
+        * Throughput Optimized HDD (st1) - 처리량에 최적화된 HDD 
             * 자주 액세스하는 처리량 집약적 워크로드에 적합한 저비용 HDD 볼륨
             * 저비용으로 일관되고 높은 처리량을 요구하는 스트리밍워크로드,
-        * Colde HDD
+        * Colde HDD (sc1)
             * 자주 액세스하지 않는 워크로드에 적합한 최저 비용 HDD 볼륨        
     * 스냅샷은 자동으로 암호화
     
