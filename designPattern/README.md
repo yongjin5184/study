@@ -135,8 +135,15 @@
 17. Visitor Pattern
 * [Tutorialsponits_디자인_패턴-Visitor_패턴](https://www.tutorialspoint.com/design_pattern/visitor_pattern.htm)
 * 객체에 대한 행위의 내용을 외부 클래스로 추출
-* 동작 패턴 범주
+* 행위 패턴의 하나
 * [Visitor_패턴](https://blog.naver.com/2feelus/220664244510) 
+
+
+18. Interpreter Pattern
+* [Tutorialsponits_디자인_패턴-Interpreter 패턴](https://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm)
+* 언어 문법 또는 Expression 을 평가하는 방법을 제공
+* 행위 패턴의 하나
+* SQL 구문 분석, Expression 처리 엔진등에 사용
 
 
 >> Enum 의 활용
