@@ -138,6 +138,7 @@
 * 행위 패턴의 하나
 * [Visitor_패턴](https://blog.naver.com/2feelus/220664244510) 
 
+2019.1.7
 
 18. Interpreter Pattern
 * [Tutorialsponits_디자인_패턴-Interpreter 패턴](https://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm)
@@ -145,6 +146,13 @@
 * 행위 패턴의 하나
 * SQL 구문 분석, Expression 처리 엔진등에 사용
 
+2019.1.8
+
+19. State Pattern
+* [Tutorialsponits_디자인_패턴-State 패턴](https://www.tutorialspoint.com/design_pattern/state_pattern.htm)
+* 상태에 따라 행위가 바뀌는 패턴
+* 행위 패턴의 하나
+* 다양한 상태를 나타내는 객체와 상태가 변경됨에 따라 행위가 달라지는 컨텍스트 객체가 존재
 
 >> Enum 의 활용
 >> * Enum 안의 method 를 override 해서 사용 가능하다.
