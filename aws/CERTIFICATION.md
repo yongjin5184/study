@@ -184,3 +184,8 @@
 * CloudHSM
     * AWS 클라우드상의 관리형 하드웨어 보안 모듈(HSM)
     * AWS 클라우드에서 자체 암호화 키를 손쉽게 생성 및 사용할 수 있도록 지원하는 클라우드 기반 하드웨어 보안 모듈(HSM)
+    
+### DynamoDB
+
+* DynamoDB Accelerator(DAX)
+    * DAX 는 DynamoDB를 위한 가용성이 뛰어난 완전관리형 인 메모리 cache
