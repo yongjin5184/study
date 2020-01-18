@@ -192,6 +192,8 @@
 * 3개의 가용 영역 전체에 자동 복제
 
 #### DynamoDB
+* 키-값 및 문서 데이터베이스
+* 완전 관리형 
 * DynamoDB Accelerator(DAX)
     * DAX 는 DynamoDB를 위한 가용성이 뛰어난 완전관리형 인 메모리 cache
     
@@ -204,3 +206,24 @@
 
 #### KMS (Key Management Service)
 *  데이터 암호화에 사용하는 암호화 키를 쉽게 생성하고 제어할 수 있게 해주는 관리형 서비스
+
+
+### ELB
+* CLB (Classic Load Balancer)
+    * L4 계층부터 L7 계층 까지 포괄적인 로드밸런싱이 가능
+    * Sticky Session 등의 기능
+
+* ALB (Application Load Balancer)
+    * Classic Load Balancer 이후 출시된 서비스
+    * HTTP 및 HTTPS 트래픽 로드밸런싱에 최적화
+    * HTT 의 URL, FTP 의 파일명, 쿠키 정보 등을 분석해서 정교한 로드 밸런싱이 가능
+    * Content Based Routing
+    * Sticky Session 등의 기능
+     
+* NLB (Network Load Balancer)
+    * AWS Load Balancer에 Elastic IP(고정)을 부여
+    *  TCP 레이어 지원
+
+#### Proxy
+* [리버스_프록시 구성](https://www.joinc.co.kr/w/man/12/proxy)
+* [포워드 프록시(forward proxy) 리버스 프록시(reverse proxy) 의 차이](https://www.lesstif.com/pages/viewpage.action?pageId=21430345) 
