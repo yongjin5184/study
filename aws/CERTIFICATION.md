@@ -184,8 +184,23 @@
 * CloudHSM
     * AWS 클라우드상의 관리형 하드웨어 보안 모듈(HSM)
     * AWS 클라우드에서 자체 암호화 키를 손쉽게 생성 및 사용할 수 있도록 지원하는 클라우드 기반 하드웨어 보안 모듈(HSM)
-    
-### DynamoDB
 
+
+### DataBase
+
+#### Aurora
+* 3개의 가용 영역 전체에 자동 복제
+
+#### DynamoDB
 * DynamoDB Accelerator(DAX)
     * DAX 는 DynamoDB를 위한 가용성이 뛰어난 완전관리형 인 메모리 cache
+    
+#### Redshift
+* Redshift 는 OLAP 데이터베이스를 위해 설계된 관리형 데이터 웨어하우스 솔루션
+* PostgreSQL 기반
+* Redshift 는 열 기반 스토리지를 사용
+* 저장 속도와 효율성이 향상되고 개별 열의 데이터를 더 빨리 쿼리
+* Data warehouse 구
+
+#### KMS (Key Management Service)
+*  데이터 암호화에 사용하는 암호화 키를 쉽게 생성하고 제어할 수 있게 해주는 관리형 서비스
