@@ -204,11 +204,10 @@
 * 저장 속도와 효율성이 향상되고 개별 열의 데이터를 더 빨리 쿼리
 * Data warehouse 구
 
-#### KMS (Key Management Service)
+##### KMS (Key Management Service)
 *  데이터 암호화에 사용하는 암호화 키를 쉽게 생성하고 제어할 수 있게 해주는 관리형 서비스
 
-
-### ELB
+#### ELB
 * CLB (Classic Load Balancer)
     * L4 계층부터 L7 계층 까지 포괄적인 로드밸런싱이 가능
     * Sticky Session 등의 기능
@@ -217,13 +216,18 @@
     * Classic Load Balancer 이후 출시된 서비스
     * HTTP 및 HTTPS 트래픽 로드밸런싱에 최적화
     * HTT 의 URL, FTP 의 파일명, 쿠키 정보 등을 분석해서 정교한 로드 밸런싱이 가능
+    * Host-based Routing, Path-based Routing 지원 
     * Content Based Routing
     * Sticky Session 등의 기능
      
 * NLB (Network Load Balancer)
     * AWS Load Balancer에 Elastic IP(고정)을 부여
-    *  TCP 레이어 지원
+    * TCP 레이어 지원
 
+#### Auto Scaling group
+* EC2 인스턴스의 트래픽에 따라서 자동으로 추가적인 EC2 인스턴스를 생성 및 삭제해 최적의 서비스를 제공하는 기능
+
+#### Elastic ip 
 #### Proxy
 * [리버스_프록시 구성](https://www.joinc.co.kr/w/man/12/proxy)
 * [포워드 프록시(forward proxy) 리버스 프록시(reverse proxy) 의 차이](https://www.lesstif.com/pages/viewpage.action?pageId=21430345) 
