@@ -221,12 +221,16 @@
     * Sticky Session 등의 기능
      
 * NLB (Network Load Balancer)
-    * AWS Load Balancer에 Elastic IP(고정)을 부여
+    * AWS Load Balancer 에 Elastic IP(고정)을 부여
     * TCP 레이어 지원
 
 #### Auto Scaling group
 * EC2 인스턴스의 트래픽에 따라서 자동으로 추가적인 EC2 인스턴스를 생성 및 삭제해 최적의 서비스를 제공하는 기능
 
+* Auto Scaling lifecycle hooks
+    * EC2 instance 가 Scale in, Scale out 될때, Hook 으로 이벤트를 받을 수 있음
+    * 서버가 시작하거나 종료될 때 Action 이 필요한 경우, Hook 으로 이벤트를 받을 수 있음
+    
 #### Elastic ip 
 #### Proxy
 * [리버스_프록시 구성](https://www.joinc.co.kr/w/man/12/proxy)
