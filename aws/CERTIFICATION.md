@@ -231,6 +231,13 @@
     * EC2 instance 가 Scale in, Scale out 될때, Hook 으로 이벤트를 받을 수 있음
     * 서버가 시작하거나 종료될 때 Action 이 필요한 경우, Hook 으로 이벤트를 받을 수 있음
     
+* Auto Scaling Cooldown
+    * Auto Scaling 은 simple scaling policies 때, cooldown 를 지원
+    * Simple scaling policies 을 사용하여 동적으로 scaling 하면 cooldown period 만큼 기다렸다가 scaling 을 재개
+    
+* Health Check Grace Period : 
+    * EC2 인스턴스가 InService 상태일 때 설정한 초만큼 헬스 체크를 뒤로 미룸
+    
 #### Elastic ip 
 #### Proxy
 * [리버스_프록시 구성](https://www.joinc.co.kr/w/man/12/proxy)
