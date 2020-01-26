@@ -202,7 +202,7 @@
 * PostgreSQL 기반
 * Redshift 는 열 기반 스토리지를 사용
 * 저장 속도와 효율성이 향상되고 개별 열의 데이터를 더 빨리 쿼리
-* Data warehouse 구
+* Data warehouse
 
 ##### KMS (Key Management Service)
 *  데이터 암호화에 사용하는 암호화 키를 쉽게 생성하고 제어할 수 있게 해주는 관리형 서비스
@@ -237,7 +237,11 @@
     
 * Health Check Grace Period : 
     * EC2 인스턴스가 InService 상태일 때 설정한 초만큼 헬스 체크를 뒤로 미룸
-    
+
+#### Amazon EMR
+* 빅데이터 플랫폼 - 데이터 집약적인 작업을 수행하는데 필요한 적당한 용량을 즉시 프로비저닝할 수 있음
+* 하둡 프레입워크를 사용하여 하나의 대형 컴퓨터를 사용하여 데이터를 저장 및 처리하는 대신 여러 컴퓨터를 함께 클러스트링하여 대량의 데이터 세트를 병렬로 분석
+
 #### Elastic ip 
 #### Proxy
 * [리버스_프록시 구성](https://www.joinc.co.kr/w/man/12/proxy)
