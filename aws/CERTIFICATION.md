@@ -254,6 +254,12 @@
 #### Amazon Athena 
 * 표준 SQL 을 사용해 S3에 저장된 빅 데이터를 간편하게 분석할 수 있는 서버리스 대화식 쿼리 서비스
 
+#### Kinesis Data Firehose
+* 스트리밍 데이터를 데이터 레이크, 데이터 스토어 및 분석 도구에 안정적으로 로드하는 방법
+
+#### Amazon Cognito  
+* 웹 및 모바일 앱에 대한 인증, 권한 부여 및 사용자 관리를 제공
+
 #### Elastic ip 
 #### Proxy
 * [리버스_프록시 구성](https://www.joinc.co.kr/w/man/12/proxy)
