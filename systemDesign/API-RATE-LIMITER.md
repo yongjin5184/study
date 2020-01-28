@@ -49,3 +49,18 @@
     
 * Rolling Window Algorithm
     * time window 는 요청이 이루어진 시점과 time window 의 길이를 더한 것으로 고려한다.
+
+7. 고수준의 디자인
+* Web Server 는 먼저 Rate Limiter 에게 요청을 throttling 할지 serve 할지 확인한 후, throttling 하지 않으면 API Server 로 전달한다.
+
+8. 기본 시스템 디자인과 알고리즘
+* 사용자당 요청 수를 제한하려면, HashTable 을 사용할 수 있다. Key 는 UserID, Value 는 count 와 timestamp 를 구조화하여 저장할 수 있다.
+* User data 를 저장하는데 얼마나 많은 메모리가 필요한가?
+    * 8 (ID) + 2 (count) + 2 (epoch time, minute/second) = 12 bytes 
+    * (12 + 20 (overhead)) * 1 million (users) = 32MB
+    
+9. Sliding Window algorithm
+* Key 는 UserID, Value 는 Redis Sorted Set 에 각 요청의 timestamp 를 저장한다.
+* User data 를 저장하는데 얼마나 많은 메모리가 필요한가?
+    * 8 (ID) * 4(epoch time) + 20 (sorted set over head) * (500(시간당 500개의 요청을 제한) + 20 (Hash table over head)) = 12KB
+    * 12KB * 1 million (users) = 12GB
