@@ -150,11 +150,18 @@
 * Direct Connect 
     * 내부 네트워크를 프라이빗 연결로 Direct Connect 와 연결
     * 온프레미스에서 AWS 로 전용 네트워크 연결을 쉽게 설정할 수 있는 클라우드 서비스 솔루션
-    
+
+* Bastion Host
+    * 베스천(Bastion) 은 보루, 요새라는 뜻
+    * 네트워크에 접근하기 위해 유일하게 외부에 노출되는 호스트
+    * Public subnet 에 위치
+    * 회사내의 개발자 PC 등 정해진 곳에서 사설망 내의 서버에 개발이나 관리를 위해 SSH 등으로 원격 접속이 필요하면 Bastion Host 를 거침
+
 * Route 53
     * www.example.com 과 같은 도메인 이름을 192.0.2.1 과 같은 IP 주소로 변환
     * 사용자의 요청을 AWS 의 다른 서비스로 연결 
     * 도메인 등록 대행
+    * 별칭 레코드는 하나의 DNS 이름을 다른 Amazon Route53 DNS 이름에 매핑
     * 라우팅 정책
         * Failover Routing
             * 장애 조치 라우팅
