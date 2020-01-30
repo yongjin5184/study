@@ -278,6 +278,12 @@
 #### Amazon Cognito  
 * 웹 및 모바일 앱에 대한 인증, 권한 부여 및 사용자 관리를 제공
 
+### CloudFront
+* Origin Access Identity(OAI)
+    * CloudFront 를 통해 개인 콘텐츠를 공유하는 데 사용
+    * Virtual user identity 
+    *  origin server 로 부터 fetch a private object 하는 CF permission 에 사용
+    
 #### Elastic ip 
 #### Proxy
 * [리버스_프록시 구성](https://www.joinc.co.kr/w/man/12/proxy)
