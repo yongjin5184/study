@@ -282,7 +282,7 @@
 * Origin Access Identity(OAI)
     * CloudFront 를 통해 개인 콘텐츠를 공유하는 데 사용
     * Virtual user identity 
-    *  origin server 로 부터 fetch a private object 하는 CF permission 에 사용
+    * Origin server 로 부터 fetch a private object 하는 CF permission 에 사용
     
 #### Elastic ip 
 #### Proxy
