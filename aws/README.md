@@ -1,4 +1,7 @@
-2019.11.18 ~
+2019.11.18 ~ 2020.1.30
+
+#### 합격 :trophy:
+[합격_배지](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2020-01-30&ci=AWS01256925)
 
 [AWS 공인 솔루션스 아키텍트 - 어소시에이트](https://aws.amazon.com/ko/certification/certified-solutions-architect-associate/)
 
