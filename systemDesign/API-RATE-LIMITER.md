@@ -64,3 +64,20 @@
 * User data 를 저장하는데 얼마나 많은 메모리가 필요한가?
     * 8 (ID) * 4(epoch time) + 20 (sorted set over head) * (500(시간당 500개의 요청을 제한) + 20 (Hash table over head)) = 12KB
     * 12KB * 1 million (users) = 12GB
+    
+10. Sliding Window with Counters
+* 시간당 비율 제한과 분당 제한 요청을 함께 산정하는 방식
+* 시간당 비율 제한을 위해선 데이터를 모두 꺼내서 count 를 더하고, 분당 제한 요청은 해당 타임스탬프의 count 를 꺼내서 비교한다.
+* ex) "KIM" : {149928400(timestamps) : 1 (count)}
+
+
+11. Data Sharding and Caching
+* API 를 분할할 경우 각 API shard 에 대하여 별도의 rate limit 를 두는 것이 고려사항이 된다.
+* Write-back cache ( Cache 내에 일시적으로 저장된 후, Cache 에서 해제되는 때에만 주기억장치에 기록되는 방범 ) 을 통해 업데이트 없이 데이터만 읽기등 이점을 볼 수 있다.
+
+12.
+* Throttle requests per-IP
+* 여러 사용자가 하나의 공용 IP 를 공유하는 경우는 한 명의 잘못된 사용자가 다른 사용자의 제한을 초래할 수 있다.
+ 
+* Throttle user authentication
+* 로그인 API 자체에 rate limit 가 필요하다면, 처리하지 못한다.
