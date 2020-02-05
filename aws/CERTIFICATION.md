@@ -283,7 +283,10 @@
     * CloudFront 를 통해 개인 콘텐츠를 공유하는 데 사용
     * Virtual user identity 
     * Origin server 로 부터 fetch a private object 하는 CF permission 에 사용
-    
+
+### AWS WAF
+* 가용성에 영향을 주거나, 보안을 위협하거나, 리소스를 과도하게 사용하는 일반적인 웹 공격으로부터 웹 애플리케이션이나 API 를 보호하는 데 도움이 되는 웹 애플리케이션 방화벽
+
 #### Elastic ip 
 #### Proxy
 * [리버스_프록시 구성](https://www.joinc.co.kr/w/man/12/proxy)
