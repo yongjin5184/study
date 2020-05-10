@@ -104,6 +104,21 @@
                 * spring.batch.job.names 을 통해 Program arguments 로 job name 을 설정
                 * @ConditionalOnProperty 으로 property 의 value 가 job name 을 가지고 있는지 체크
      
+* 검증
+    * 이전 테이블의 데이터를 통계에 필요한 테이블로 배치를 통해 적재
+    * RDS performance Insight 로 확인하면서 데이터 적재 
+    * 6만개
+        * 소요시간 : 102s
+    * 9만개
+        * 소요시간 : 139s
+    * 12만개 
+        * 소요시간 : 174s
+    * 15만개
+        * 소요시간 : 224s
+    * 22만개
+        * 소요시간 : 319s
+    * 26만개
+        * 소요시간 : 404s
      
 * 참고자료
     * 기억보단기록을 [https://jojoldu.tistory.com/326?category=902551]
