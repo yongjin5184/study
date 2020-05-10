@@ -21,7 +21,7 @@
         * Mybatis-boot-starter 2.2.x
         
 * 서버 구성
-    * Nginx -> jenkins 포트 포워딩
+    * Nginx -> jenkins
     * Jenkins 의 **Shell script** 를 통해 **Schedule 되어있는 시간**에 jar 파일을 실행하는 형태
     * 현재 고민
         * 기존 local 에서 jar 를 만들어 서버로 복사하는 상황, Jenkins/Git action 를 이용해 자동화 할 수 있을 듯(?)
@@ -80,10 +80,29 @@
          * JobRepository
             * Job 이나 Step 의 상태를 관리
          
-     * Chunk
-     
-     * StepScope
-     
+    * application.yml
+        * JOB 이 여러개 생길 때, 해당 JOB 만을 실행 시키기 위한 방법
+            * spring.batch.job.names 을 통해 Program arguments 로 job name 을 설정
+            * @ConditionalOnProperty 으로 property 의 value 가 job name 을 가지고 있는지 체크
+    
+    * JobParameter
+        * 외부에서 파라미터를 받아 Batch 컴포넌트에서 쓰기 위한 목적
+    
+    * Chunk
+        * 데이터를 한 건씩 처리하는 것이 아니라 일정 개수 단위(청크)로 처리하는 방식
+    
+    * JobScope
+        * Step 에서 사용
+    
+    * StepScope
+        * Tasklet, ItemReader, ItemProcessor, ItemWriter 에서 사용
+        * 호출하는 쪽에서 파라미터에 null 이 들어가는 이유는 애플리케이션 실행시 파라미터를 할당하지 않기 때문
+        * Spring 의 기본 Scope 는 singleton, @StepScope 를 사용하게 되면 
+        Spring Batch 가 Spring 컨테이너를 통해 지정된 Step 의 실행시점에 해당 컴포넌트를 Spring Bean 으로 생성
+        * 이로 인해 얻는 이점
+            * Late Binding 이 가능해서, 애플리케이션이 실행되는 시점이 아니라 비지니스 로직 처리 단계(Controller, Service) 에서
+            Job Parameter 를 할당할 수 있음
+            * 동일한 컴포넌트를 병렬로 사용할 때 각각의 Step 에서 별도의 Tasklet 를 생성하고 관리하기 때문에 서로의 상태를 침범할 일이 없음
      
 * 참고자료
     * 기억보단기록을 [https://jojoldu.tistory.com/326?category=902551]
