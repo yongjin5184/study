@@ -104,6 +104,20 @@
                 * spring.batch.job.names 을 통해 Program arguments 로 job name 을 설정
                 * @ConditionalOnProperty 으로 property 의 value 가 job name 을 가지고 있는지 체크
      
+    * 배치 실행
+        * 정상 종료시
+            * 일단 정상적으로 종료된 배치 처리는 다시 실행할 수가 없음
+            * JobInstanceAlreadyCompleteException 예외 발생
+            * 이때, 같은 Parameter 의 Job 을 실행하기 위해 JobParameter 에 System.currentTimeMillis() 를 넘기는 방법이 있음
+        
+        * 비정상 종료시 
+            * Step1, Step2 로 되어있는 Job 의 경우 Step1 까지 마치고 Step2 에서 에러가 났을 시 
+            * BATCH_STEP_EXECUTION 테이블 
+                * Step1 COMPLETED 처리
+                * Step2 FAILED 처리
+            * 반드시 실행한 배치 처리와 명령행 인수를 똑같이 지정하여 재처리
+                * Step2 실패한 부분에서 부터 다시 실
+        
 * 검증
     * 이전 테이블의 데이터를 통계에 필요한 테이블로 배치를 통해 적재
     * RDS performance Insight 로 확인하면서 데이터 적재 
