@@ -67,23 +67,18 @@
         * BATCH_STEP_EXECUTION_SEQ
             * 시퀀스 테이블
     
-    * Spring Batch 기본 구조
-        * JobLauncher
-            * 배치 애플리케이션을 기동하기 위한 인터페이스
-            * 모든 배치 애플리케이션은 이 클래스를 통해 실행됨
-        * Job
-            * 일련의 처리 과정을 하나의 단위로 만든 실행 단위
-        * Step
-            * Job 을 구성하는 세부 처리 단위
-            * 하나의 Job 은 N개의 Step 으로 구성 될 수 있음
-            * Step 은 **Chunk 방식**이나 **Tasklet 방식** 중 한가지 형태로 실행
-         * JobRepository
-            * Job 이나 Step 의 상태를 관리
-         
-    * application.yml
-        * JOB 이 여러개 생길 때, 해당 JOB 만을 실행 시키기 위한 방법
-            * spring.batch.job.names 을 통해 Program arguments 로 job name 을 설정
-            * @ConditionalOnProperty 으로 property 의 value 가 job name 을 가지고 있는지 체크
+* Spring Batch 기본 구조
+    * JobLauncher
+        * 배치 애플리케이션을 기동하기 위한 인터페이스
+        * 모든 배치 애플리케이션은 이 클래스를 통해 실행됨
+    * Job
+        * 일련의 처리 과정을 하나의 단위로 만든 실행 단위
+    * Step
+        * Job 을 구성하는 세부 처리 단위
+        * 하나의 Job 은 N개의 Step 으로 구성 될 수 있음
+        * Step 은 **Chunk 방식**이나 **Tasklet 방식** 중 한가지 형태로 실행
+    * JobRepository
+        * Job 이나 Step 의 상태를 관리
     
     * JobParameter
         * 외부에서 파라미터를 받아 Batch 컴포넌트에서 쓰기 위한 목적
@@ -103,6 +98,12 @@
             * Late Binding 이 가능해서, 애플리케이션이 실행되는 시점이 아니라 비지니스 로직 처리 단계(Controller, Service) 에서
             Job Parameter 를 할당할 수 있음
             * 동일한 컴포넌트를 병렬로 사용할 때 각각의 Step 에서 별도의 Tasklet 를 생성하고 관리하기 때문에 서로의 상태를 침범할 일이 없음
+     
+        * application.yml
+            * JOB 이 여러개 생길 때, 해당 JOB 만을 실행 시키기 위한 방법
+                * spring.batch.job.names 을 통해 Program arguments 로 job name 을 설정
+                * @ConditionalOnProperty 으로 property 의 value 가 job name 을 가지고 있는지 체크
+     
      
 * 참고자료
     * 기억보단기록을 [https://jojoldu.tistory.com/326?category=902551]
