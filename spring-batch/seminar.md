@@ -5,7 +5,10 @@
     * Spring batch + Jenkins + Slack
     * ~~Quartz~~ 
     * ~~Spring boot + Lambda~~ 
-    
+    * 선택 이유
+        1) 큐나 스케줄링등 다양한 방법을 통해서 대량 데이터 처리를 할 수 있지만, 사내에 조만간 필요하게 될 배치 시스템을 구축하기 위해 Spring Batch 를 선택
+        2) Jenkins 를 통해 향후 Build 자동화의 가능성도 열어둠
+*        
 * 기술
     * Spring Boot
         * 2.2.x
@@ -108,7 +111,7 @@
         * 정상 종료시
             * 일단 정상적으로 종료된 배치 처리는 다시 실행할 수가 없음
             * JobInstanceAlreadyCompleteException 예외 발생
-            * 이때, 같은 Parameter 의 Job 을 실행하기 위해 JobParameter 에 System.currentTimeMillis() 를 넘기는 방법이 있음
+            * 이때, 같은 Parameter 의 Job 을 실행하기 위해 JobParameter 에 System.currentTimeMillis() 를 넘기는 방법이 있
         
         * 비정상 종료시 
             * Step1, Step2 로 되어있는 Job 의 경우 Step1 까지 마치고 Step2 에서 에러가 났을 시 
@@ -139,6 +142,16 @@
     * 스프링 철저 입문 [http://www.yes24.com/Product/Goods/59192207]
     * 처음부터 배우는 스프링 부트2 [http://www.yes24.com/Product/Goods/64584833]
 
+* 회의 후, 고려해야할 사항
+    * 병렬 처리 어떻게 할 것인가, 지금은 Job이 하나이기 때문에 상관없지만 나중에는 고려해야할 듯
+    * 다시 구축 할 때, 누군가가 보고 할 수 있는 방법을 적어 놓기 → 문서화
+    * 청크를 변경하면서 데이터를 넣어보면 시간이 어떻게 되는지 테스트해 보자
+    * Writer 의 IO 가 어떻게 되는지 확인해보자
+    * 애매한 로직은 어디 들어가야하는지 ex) 로직이 끝나고 문자 보낸다. 이는 process 에서 해야할 까? writer 에서 해야할까?
+    * 다음 스프린트에 비중이 낮은거 가져와서 배치로 돌려보자
+        * 배치로 할 만한게 어떤게 있는지 확인
+    * 새벽에 한번만 돌아가는데 EC2 죽여야하지 않나?
+    * jenkins 서버를 나눠보는 것도 고려
 
 
 
